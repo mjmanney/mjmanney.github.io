@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jaldi', sans-serif;
+}
+
+/* Hides every scroll bar on the page */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.sectionContent {
+  font-size: 24px;
+}
+
+
+#about {
+  padding: 40px 0 40px 0;
+  background-image: url('../src/img/geometry_@2x.png');
+}
+
+body{
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
+#EV {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	left: 220px;
+	border: 2px solid white;
+}
+
+#EVspec {
+	font-size:  22px;
+	color: black;
+}
+
+.jumbotron {
+  color: white;
+  /** 'Seoul during Monsoon' taken by reddit user /u/then0mads0ul**/
+  background-image: url('https://i.imgur.com/ZfqmFfN.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-fluid{
+  margin-bottom: 0;
+}
+
+#collapse {
+	padding: 40px 0 40px 0;
+	background-color: lightgray;
+}
+
+.header div h1{
+  font-size: 36px
+}
+
+.sectionTitle {
+  font-size: 56px;
+}
+
+#profile-picture {
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: 10px;
+  background-image: url('../src/img/profile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+
+.navbar, .navbar-collapse {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar .container-fluid .list {
+  font-size: 18px;
+  padding-right: 26px;
+}
+
+.navbar .container-fluid .list a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar .container-fluid .list a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.icon-bar {
+  background-color:white !important;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus{
+  background-color: rgba(0,0,0,0) !important;
+}
+
+#projects{
+ font-size: 18px;
+ padding: 110px 5px 0 5px;
+}
+
+.projectBackgroundColor {
+  width: 100%;
+  background-color: #b3b3cc;
+}
+
+#projects .row {
+  margin: 0; padding: 0;
+}
+
+.card {
+  background-color: white;
+  position: relative;
+  bottom: 60px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px
+ #333333;
+  min-height: 300px;
+  max-width: 400px;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 768px){
+  .card {
+    margin: 0 auto 10px auto;
+  }
+}
+
+.card-image {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: url('http://i.imgur.com/5HS42oV.png');
+  height: 100px;
+  background-size: cover;
+}
+
+.card-content {
+  margin: 0px;
+  overflow: hidden;
+}
+
+.viewBtn {
+  /* positioned absolutely from first parent element that is
+  positioned (.card pos = relative)
+
+  up 20px from bottom
+  width = 50% of .card
+  move left half of width(25%) to position in center*/
+
+  position: absolute;
+  bottom: 15px;
+  left: 25%;
+  width: 50%;
+  border-color: black;
+}
+
+.viewBtn:hover{
+  border-color: black;
+  background-color: #61698f;
+  color: white;
+}
+
+#res {
+  height: 150px;
+  background-color: #6d79b6;
+  overflow: hidden;
+}
+
+#res #modalBtn {
+  display: block;
+  margin: 50px auto;
+  width: 44%;
+  border: 1px solid white;
+  background-color: #6d79b6;
+  color: white;
+  min-width: 150px;
+  max-width: 400px;
+  height: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#res #modalBtn:hover{
+  cursor: pointer;
+  background-color: #61698f;
+}
+
+.modal-cover {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.5)
+}
+
+.modal-container{
+  width: 80%;
+  max-width: 800px;
+  min-width: 300px;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  position: relative;
+  top: 20px;
+  min-height: 400px;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-X {
+  float: right;
+}
+
+.modal-X {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.modal-X:hover {
+  cursor: pointer;
+}
+
+.major {
+  display: inline;
+  border-bottom: 1px solid black;
+}
+
+.date {
+  display: inline;
+  float: right;
+}
+
+.points {
+  margin: 4px 0 4px 26px;
+}
+
+.projectBackgroundColor h1,
+.projectBackgroundColor p {
+  margin: 0;
+  padding-top: 20px;
+  color: black;
+}
+
+.textFadedBackground {
+  padding: 10px 0px 10px 40px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8)
+}
