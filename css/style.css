@@ -20,6 +20,25 @@
   background-image: url('../src/img/geometry_@2x.png');
 }
 
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+#accounts {
+  list-style-type: none;
+  text-align: center;
+}
+
+#accounts li {
+    display: inline-block;
+}
+
+
 body{
   min-width: 300px;
   overflow-x: hidden;
@@ -151,9 +170,20 @@ body{
 .card-image {
   border: 1px solid black;
   border-radius: 10px;
-  background-image: url('http://i.imgur.com/5HS42oV.png');
   height: 100px;
   background-size: cover;
+}
+
+#app1img {
+  background-image: url("../src/img/weather.jpg")
+}
+
+#app2img {
+  background-image: url("../src/img/breakout.png")
+}
+
+#app3img {
+  background-image: url("../src/img/inventory.png")
 }
 
 .card-content {
