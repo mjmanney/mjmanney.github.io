@@ -6,21 +6,16 @@ $(document).ready(function() {
 
 		tag: {
 			modalBtn: $('#modalBtn'),
-			hidden: $('#hidden')
-		},
-
-		nav: {
-
+			hidden: $('#hidden'),
+			github: $('#github'),
+			codepen: $('#codepen')
 		},
 
 		init: function() {
 			APP.bindEvents()
 		},
 
-		isCollapsed: false,
-
 		hide: function() {
-			/**/
 			if(APP.toggleFlag === false) {
 				APP.tag.modalBtn.html('Show Recent Build')
 				APP.toggleFlag = true
@@ -28,7 +23,6 @@ $(document).ready(function() {
 				APP.tag.modalBtn.html('Hide Recent Build')
 				APP.toggleFlag = false
 			}
-			/**/
 		}
 	}
 	APP.init()

@@ -12,6 +12,7 @@
 
 .sectionContent {
   font-size: 24px;
+  margin-left: 20px;
 }
 
 
@@ -36,6 +37,7 @@
 
 #accounts li {
     display: inline-block;
+    margin-right: 20px;
 }
 
 
@@ -44,23 +46,12 @@ body{
   overflow-x: hidden;
 }
 
-#EV {
-	width: 250px;
-	height: 250px;
-	position: relative;
-	left: 220px;
-	border: 2px solid white;
-}
-
-#EVspec {
-	font-size:  22px;
-	color: black;
-}
-
 .jumbotron {
-  color: white;
-  /** 'Seoul during Monsoon' taken by reddit user /u/then0mads0ul**/
-  background-image: url('https://i.imgur.com/ZfqmFfN.jpg');
+  color: white !important;
+  /** 'Seoul during Monsoon' taken by reddit user /u/then0mads0ul
+  https://i.imgur.com/ZfqmFfN.jpg
+  **/
+  background-image: url('../src/img/seoul.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,6 +72,7 @@ body{
 
 .sectionTitle {
   font-size: 56px;
+  margin-left: 7px;
 }
 
 #profile-picture {
@@ -103,8 +95,8 @@ body{
 
 
 .navbar, .navbar-collapse {
-  background: none;
-  border: none;
+  background-color: rgba(0,0,0,0.2)!important;
+  border: none !important;
   box-shadow: none;
 }
 
@@ -115,7 +107,7 @@ body{
 
 .navbar .container-fluid .list a {
   color: white;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .navbar .container-fluid .list a:hover {
@@ -150,11 +142,10 @@ body{
   background-color: white;
   position: relative;
   bottom: 60px;
-  border: 1px solid black;
   margin-bottom: 10px;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 5px 5px 5px
+  box-shadow: 2px 2px 2px
  #333333;
   min-height: 300px;
   max-width: 400px;
@@ -168,7 +159,7 @@ body{
 }
 
 .card-image {
-  border: 1px solid black;
+
   border-radius: 10px;
   height: 100px;
   background-size: cover;
@@ -204,6 +195,8 @@ body{
   left: 25%;
   width: 50%;
   border-color: black;
+  color: white !important;
+  background-color: #6d79b6 !important;
 }
 
 .viewBtn:hover{
@@ -212,13 +205,13 @@ body{
   color: white;
 }
 
-#res {
+#builds {
   height: 150px;
   background-color: #6d79b6;
   overflow: hidden;
 }
 
-#res #modalBtn {
+#builds #modalBtn {
   display: block;
   margin: 50px auto;
   width: 44%;
@@ -232,7 +225,7 @@ body{
   overflow: hidden;
 }
 
-#res #modalBtn:hover{
+#builds #modalBtn:hover{
   cursor: pointer;
   background-color: #61698f;
 }
@@ -246,7 +239,7 @@ body{
   width: 100%;
   height: 100%;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.5)
+  background-color: rgba(0,0,0,0.2)
 }
 
 .modal-container{
@@ -302,7 +295,6 @@ body{
 
 .projectBackgroundColor h1,
 .projectBackgroundColor p {
-  margin: 0;
   padding-top: 20px;
   color: black;
 }
@@ -310,5 +302,11 @@ body{
 .textFadedBackground {
   padding: 10px 0px 10px 40px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+#github:hover, #codepen:hover {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+
 }
