@@ -18,7 +18,7 @@
 
 #about {
   padding: 40px 0 40px 0;
-  background-image: url('../src/img/geometry2x.png');
+  background-image: url('../src/img/geometry.png');
 }
 
 .logo {
@@ -55,6 +55,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 0 !important;
 }
 
 .jumbotron-fluid{
