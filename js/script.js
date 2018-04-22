@@ -1,29 +1,14 @@
 $(document).ready(function() {
-	var APP = {
-		bindEvents: function() {
-			APP.tag.modalBtn.click(APP.hide)
-		},
+	var checkbox = $('#checkbox')
+	var label    = $('collapse-menu')
 
-		tag: {
-			modalBtn: $('#modalBtn'),
-			hidden: $('#hidden'),
-			github: $('#github'),
-			codepen: $('#codepen')
-		},
 
-		init: function() {
-			APP.bindEvents()
-		},
-
-		hide: function() {
-			if(APP.toggleFlag === false) {
-				APP.tag.modalBtn.html('Show Recent Build')
-				APP.toggleFlag = true
-			} else {
-				APP.tag.modalBtn.html('Hide Recent Build')
-				APP.toggleFlag = false
-			}
+	checkbox.change(function() {
+		if(!checkbox.is(':checked')) {
+			$('.nav_list_wrapper').css('display', 'block')
+		} else {
+			$('.nav_list_wrapper').css('display', 'none')
 		}
-	}
-	APP.init()
+
+	})
 })

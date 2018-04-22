@@ -24,136 +24,11 @@
 </head>
 
 <body>
+<!--
 
-<!-- STICKY NAV -->
+  CONTACT [ START ]
 
-<!-- Header -->
-  <header class="nav">
-    <div class="logo">
-      <a href="#">MJM</a>
-    </div>
-
-    <div class="nav_items">
-      <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-  </header>
-<!-- END NAV -->
-
-<!--START JUMBOTRON SECTION -->
-
-<div class="jumbotron jumbotron-fluid">
-  <div class="header">
-    <h1>100<span>percent</span></h1>
-    <div class="inner">
-      <h3>of yourself</h3>
-      <h3>of your team</h3>
-    </div>
-  </div>
-</div>
-
-
-<!-- END JUMBOTRON SECTION -->
-
-<!-- START ABOUT SECTION -->
-<div class="row" id="about">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-      <h1 class="sectionTitle">About</h1>
-      <p class="sectionContent">Hello friend and welcome to my site!</p>
-      <p class="sectionContent">
-      My goal as a developer is to create striking front-end applications that are written elegantly and efficiently.
-      Currently this site serves as a showcase for all of current and completed projects.  My focus
-      lies in client and server-side JavaScript.  When starting a new project, I try to develop around one or two
-      different web technologies as a way to gain experience.
-      </p>
-  </div>
-  <div class="col-md-2"></div>
-</div>
-<!-- END ABOUT SECTION -->
-
-<!-- START PROJECTS SECTION -->
-<div class="projectBackgroundColor">
-	<div class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-			<h1 class="sectionTitle">Projects</h1>
-			<p class="sectionContent">A collection of my current projects.  </p>
-		</div>
-		<div class="col-md-2"></div>
-		</div>
-<div class="container" id="projects">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <div id="app1img" class="card-image"></div>
-        <div class="card-content">
-          <h2 class="card-title">Weather</h2>
-          <p class="card-text">A modern weather app using Open Weather API.</p>
-          <a href="#" class="btn btn-default viewBtn">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div id="app3img" class="card-image"></div>
-        <div class="card-content">
-          <h2 class="card-title">Instascrape</h2>
-          <p class="card-text">Get data without using Instagram's API.</p>
-          <a href="projects/instascrape/index.html" class="btn btn-default viewBtn">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div id="app2img" class="card-image"></div>
-        <div class="card-content">
-          <h2 class="card-title">Breakout</h2>
-          <p class="card-text">An arcade classic using HTML5 canvas.</p>
-          <a href="#" class="btn btn-default viewBtn">VIEW</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- END PROJECTS SECTION -->
-
-<!-- START RES SECTION -->
-
-<div id="builds" class="container-fluid">
-
-  <button href="#collapse" data-toggle="collapse" id="modalBtn" class="btn btn-default">Show Recent Build</button>
-
-</div>
-
-<!-- END RES SECTION -->
-
-<!-- START BUILDS SECTION -->
-
-<div id="collapse" class="container-fluid collapse">
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <h1 class="sectionTitle">Builds</h1>
-        <p class="sectionContent">
-        In addition to software development, I enjoy working with computer hardware.  This
-        section documents some of my own PC builds and a project using the Raspberry Pi 3 Model B.
-        <span style="color:white;">Coming Soon!</span>
-        </p>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-</div>
-
-<!-- END BUILDS SECTION -->
-
-<!-- START CONTACT SECTION -->
+ -->
 <div class="row" id="contact">
   <div class="col-md-2"></div>
   <div class="col-md-8">
@@ -170,7 +45,149 @@
 
   <div class="col-md-2"></div>
 </div>
-<!-- END CONTACT SECTION -->
+<!--
 
+  CONTACT [ END ]
+
+ -->
+ <!--
+
+   HIDDEN SECTION
+   [ START ]
+
+ -->
+
+ <div id="collapse" class="container-fluid collapse">
+   <div class="row">
+     <div class="col-md-2"></div>
+     <div class="col-md-8">
+         <h1 class="sectionTitle">Builds</h1>
+         <p class="sectionContent">
+         In addition to software development, I enjoy working with computer hardware.  This
+         section documents some of my own PC builds and a project using the Raspberry Pi 3 Model B.
+         <span style="color:white;">Coming Soon!</span>
+         </p>
+     </div>
+     <div class="col-md-2"></div>
+   </div>
+ </div>
+
+ <!--
+
+   HIDDEN SECTION
+   [ END ]
+
+ -->
+ <!--
+
+   BUTTON [ START ]
+
+ -->
+
+ <div id="builds" class="container-fluid">
+   <button class="btn btn-default .btnToggle">
+     OPEN MORE
+   </button>
+ </div>
+
+ <!--
+
+   BUTTON [ END ]
+
+ -->
+ <!--
+
+   PROJECTS [ START ]
+
+ -->
+ <div id="project-wrapper">
+   <div class="project-inner">
+     <div id="project1" class="project-img">
+       <a href="#">Open Weather</a>
+     </div>
+   </div>
+   <div class="project-inner">
+     <div id="project2" class="project-img">
+       <a href="projects/instascrape/index.html">Instascrape</a>
+     </div>
+   </div>
+   <div class="project-inner">
+     <div id="project3" class="project-img">
+       <a href="#">Arcade</a>
+     </div>
+   </div>
+ </div>
+ <!--
+
+   PROJECTS [ END ]
+
+ -->
+ <!--
+
+   ABOUT [ START ]
+
+ -->
+ <div class="row" id="about">
+   <h1 class='content-header'>about</h1>
+   <ol>
+     <li>hasdf</li>
+     <li>hasdf</li>
+     <li>asdfasdf</li>
+   </ol>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ </div>
+ <!--
+
+   ABOUT [ END ]
+
+ -->
+ <!--
+
+   HEADER [ START ]
+
+ -->
+   <header id="nav" class="nav">
+     <div class="logo">
+       <a href="#">MJM</a>
+     </div>
+     <label id="collapse-menu">
+      <input type="checkbox" id="checkbox" checked="false" autocomplete="off">
+      <div class="glyphicon glyphicon-menu-hamburger collapse-icon"></div>
+     </label>
+     <div class="nav_list_wrapper">
+       <!-- Navbar for large devices -->
+       <ul class="nav_list">
+           <li><a href="#about">About</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#resume">Resume</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+     </div>
+   </header>
+ <!--
+
+     HEADER [ END ]
+
+ -->
+ <!--
+
+   USER LANDING [ START ]
+
+ -->
+ <div class="jumbotron jumbotron-fluid">
+   <div class="header">
+     <h1>100<span>percent</span></h1>
+     <div class="inner">
+       <h3 class="animated fadeIn first">of yourself</h3>
+       <h3 class="animated fadeIn second">of your team</h3>
+       <h2 class="animated fadeIn third">overcome any mountain</h2>
+     </div>
+   </div>
+ </div>
+ <!--
+
+   USER LANDING [END]
+
+ -->
 </body>
 </html>

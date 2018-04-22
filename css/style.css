@@ -1,111 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi');
 @import url('https://fonts.googleapis.com/css?family=Jaldi');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-::-webkit-scrollbar { display: none; }
 
-.nav {
-  position: sticky;
-  position: -webkit-sticky;
+/*
 
-  top: 0;
-  z-index: 1;
+  USER LANDING [ START ]
 
-  height: 90px;
-
-  color: #FFF;
-  background-color: #000;
-  border: 1px solid #323233;
-}
-
-.nav .logo {
-  border: 1px solid #323233;
-  display: inline-block;
-  width: 130px;
-  height: 90px;
-}
-
-.nav .logo a {
-  display: block;
-  text-align: center;
-  position: relative;
-  top: 25px;
-
-  margin: 0 10px 0 10px;
-  color: white;
-  border: 1px solid #FFF;
-
-  text-decoration: none;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.nav .logo a:hover {
-  color: white;
-}
-
-.nav .nav_items {
-  position: absolute;
-  right: 0;
-  height: 90px;
-  display: inline-block;
-}
-
-.nav .nav_items ul {
-  position: relative;
-  list-style-type: none;
-  line-height: 90px;
-
-}
-
-.nav .nav_items ul li {
-  display: inline;
-}
-
-.nav .nav_items ul li a {
-  border-top: 0;
-  border-bottom: 0;
-  border-left: 1px;
-  border-right: 1px;
-  border-color: #323233;
-  border-style: solid;
-
-  font-size: 16px;
-
-  padding: 34px 12px 34px 12px;
-  margin-left: -4px;
-
-  color: white;
-  font-weight: bold;
-
-  text-transform: uppercase;
-  text-decoration: none;
-
-  transition: color, background-color 0.5s;
-}
-
-.nav .nav_items ul li a:hover {
-  background-color: #FFF;
-  color: #000;
-}
-
-.sectionContent {
-  font-size: 24px;
-  margin-left: 20px;
-}
-
-
-#about {
-  padding: 40px 0 40px 0;
-  background-image: url('../src/img/geometry.png');
-}
-
-
-
-body {
-  min-width: 300px;
-  overflow-x: hidden;
-}
+*/
 
 .jumbotron {
   background-image: url(https://i.imgur.com/BpTwvHA.jpg);
@@ -148,12 +51,197 @@ body {
   width: 500px;
   margin: auto;
   padding-left: 20px;
+}
 
+.jumbotron .header .inner h2 {
+  position: relative;
+  top: 40px;
+  right: 250px;
+}
+
+.jumbotron .header .inner .first {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+}
+
+.jumbotron .header .inner .second {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: 2.9s;
+}
+
+.jumbotron .header .inner .third{
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: 4.0s;
 }
 
 .jumbotron-fluid{
   margin-bottom: 0;
 }
+/*
+
+  USER LANDING [ END ]
+
+*/
+
+/*-------------------------
+
+  HEADER [ START ]
+
+-------------------------*/
+#collapse-menu { display : none ; }
+
+.nav {
+  background-color : #000              ;
+  position         : sticky            ;
+  z-index          : 1                 ;
+  bottom           : 0                 ;
+  height           : 90px              ;
+  border           : 1px solid #323233 ;
+  width            : 100%              ;
+  color            : #FFF              ;
+}
+
+/* LOGO */
+
+.nav .logo {
+  margin-left : 40px              ;
+  display     : inline-block      ;
+  border      : 1px solid #323233 ;
+  height      : 90px              ;
+  width       : 130px             ;
+}
+
+.nav .logo a {
+  text-decoration : none           ;
+  font-weight     : bold           ;
+  text-align      : center         ;
+  font-size       : 28px           ;
+  position        : relative       ;
+  display         : block          ;
+  margin          : 0 10px 0 10px  ;
+  border          : 1px solid #FFF ;
+  color           : white          ;
+  top             : 25px           ;
+}
+
+.nav .logo a:hover { color : blue ; }
+
+/* MENU ITEMS */
+
+.nav .nav_list_wrapper {
+  margin-right : 40px         ;
+  position     : absolute     ;
+  display      : inline-block ;
+  height       : 90px         ;
+  right        : 0            ;
+}
+
+.nav .nav_list_wrapper .nav_list {
+  list-style-type : none     ;
+  margin-bottom   : 0        ;
+  position        : relative ;
+  height          : 90px     ;
+}
+
+.nav .nav_list_wrapper .nav_list li {
+  border-left   : 1px          ;
+  border-right  : 1px          ;
+  border-top    : 0            ;
+  border-bottom : 0            ;
+  border-color  : #323233      ;
+  border-style  : solid        ;
+  margin-left   : -5px         ;
+  position      : relative     ;
+  display       : inline-block ;
+  height        : 90px         ;
+}
+
+.nav .nav_list_wrapper .nav_list li a {
+  text-decoration : none                         ;
+  text-transform  : uppercase                    ;
+  font-weight     : bold                         ;
+  transition      : color, background-color 0.5s ;
+  text-align      : center                       ;
+  position        : relative                     ;
+  padding         : 35px 14px 30px 14px          ;
+  display         : block                        ;
+  height          : 90px                         ;
+  color           : white                        ;
+}
+
+.nav .nav_list_wrapper .nav_list li a:hover {
+  background-color : #FFF ;
+  color            : #000 ;
+}
+
+@media screen and (max-width: 726px) {
+  .nav .nav_list_wrapper { display : none ; }
+  #collapse-menu input   { display : none ; }
+  #collapse-menu {
+    transition : color, background-color 0.8s ;
+    position   : absolute                     ;
+    display    : inline-block                 ;
+    height     : 100%                         ;
+    border     : 1px solid #323233            ;
+    right      : 40px                         ;
+    width      : 90px                         ;
+  }
+
+  #collapse-menu:hover {
+    background-color : #FFF    ;
+    cursor           : pointer ;
+    color            : #000    ;
+  }
+
+  .collapse-icon {
+    position   : absolute        ;
+    text-align : center          ;
+    font-size  : 42px            ;
+    width      : 50px            ;
+    left       : 20px            ;
+    top        : 22px !important ;
+  }
+}
+/*-------------------------
+
+  HEADER [ END ]
+
+-------------------------*/
+
+
+#about {
+  display: block;
+  background-image: url('https://source.unsplash.com/RJRpkYJqSzk');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-size: 28px;
+  padding: 60px;
+}
+
+.content-header {
+  color: red;
+}
+
+
+
+
+
+body {
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
 
 #collapse {
 	padding: 40px 0 40px 0;
@@ -181,64 +269,90 @@ body {
   font-size: 56px;
   margin-left: 7px;
 }
+/*-------------------------
 
+  PROJECTS [ START ]
 
-#projects{
- font-size: 18px;
- padding: 110px 5px 0 5px;
+-------------------------*/
+
+#project-wrapper {
+  flex-direction: row      ;
+  flex-wrap     : nowrap   ;
+  position      : relative ;
+  display       : flex     ;
+  height        : 400px    ;
+  width         : 100%     ;
 }
 
-.projectBackgroundColor {
-  width: 100%;
-  background-color: #b3b3cc;
+#project-wrapper .project-inner {
+  overflow : hidden ;
+  width    : 100%   ;
 }
 
-#projects .row {
-  margin: 0; padding: 0;
+#project-wrapper .project-img {
+  transition          : transform .8s ease ;
+  transform           : scale(1.4)         ;
+  background-position : center             ;
+  background-size     : cover              ;
+  height              : 100%               ;
+  width               : 100%               ;
 }
 
-.card {
-  background-color: white;
-  position: relative;
-  bottom: 60px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 2px 2px 2px #333333;
-  min-height: 300px;
-  max-width: 400px;
-  min-width: 150px;
+#project-wrapper .project-img:hover {
+  transform : scale(1.0) ;
+  cursor    : pointer    ;
 }
 
-@media screen and (max-width: 768px){
-  .card {
-    margin: 0 auto 10px auto;
+#project-wrapper .project-img:hover::before {
+  background-color : rgba(128, 0, 128, 0.5) ;
+  position         : absolute               ;
+  content          : ''                     ;
+  height           : 100%                   ;
+  width            : 100%                   ;
+  left             : 0                      ;
+  top              : 0                      ;
+
+
+}
+
+#project-wrapper .project-img a {
+  text-decoration : none                      ;
+  text-transform  : uppercase                 ;
+  font-family     : 'Do Hyeon', sans-serif    ;
+  text-align      : center                    ;
+  font-size       : 32px                      ;
+  position        : absolute                  ;
+  display         : none                      ;
+  height          : 30px                      ;
+  margin          : auto                      ;
+  color           : white                     ;
+  top : 0 ; left : 0 ; bottom : 0 ; right : 0 ;
+}
+
+#project-wrapper .project-img:hover a { display : block ;}
+
+#project1 { background-image: url("https://source.unsplash.com/DcKtooTyuuQ/"); }
+#project2 { background-image: url("https://source.unsplash.com/HRZUzoX1e6w/"); }
+#project3 { background-image: url("https://source.unsplash.com/BpqDaDxG48w/"); }
+
+/* small screen */
+@media screen and (max-width: 600px) {
+  #project-wrapper {
+    flex-direction: row      ;
+    flex-wrap     : wrap     ;
+    position      : relative ;
+    display       : flex     ;
   }
 }
 
-.card-image {
+/*-------------------------
 
-  border-radius: 10px;
-  height: 100px;
-  background-size: cover;
-}
+  PROJECTS [ END ]
 
-#app1img {
-  background-image: url("../src/img/weather.jpg")
-}
+-------------------------*/
 
-#app2img {
-  background-image: url("../src/img/breakout.png")
-}
 
-#app3img {
-  background-image: url("../src/img/inventory.png")
-}
 
-.card-content {
-  margin: 0px;
-  overflow: hidden;
-}
 
 .viewBtn {
   /* positioned absolutely from first parent element that is
@@ -269,7 +383,7 @@ body {
   overflow: hidden;
 }
 
-#builds #modalBtn {
+#builds .btnToggle {
   display: block;
   margin: 50px auto;
   width: 44%;
@@ -283,7 +397,7 @@ body {
   overflow: hidden;
 }
 
-#builds #modalBtn:hover{
+#builds .btnToggle:hover{
   cursor: pointer;
   background-color: #61698f;
 }
@@ -326,27 +440,7 @@ body {
 }
 
 #github:hover, #codepen:hover {
-  -webkit-animation: pulse 1s;
-  animation: pulse 1s;
+  -webkit-animation: p.nav_listse 1s;
+  animation: p.nav_listse 1s;
 
-}
-
-
-@media only screen and (max-width: 540px) {
-    #nav li {
-      margin: ;
-    }
-    #nav li a{
-      color: white;
-      display: inline-block;
-      border: 1px solid white;
-      border-radius: 5px;
-      padding: 5px;
-      font-size: 12px;
-      width: 50px;
-      text-align: center;
-      position: relative;
-      transition: background-color 1s;
-    }
-    }
 }
