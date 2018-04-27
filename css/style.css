@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 
 *    { margin    : 0     ; padding    : 0      ; box-sizing : border-box ; }
-body { min-width : 300px ; overflow-x : hidden ;                           }
+body { min-width : 300px ; overflow : hidden ;                             }
 .scarlet { color : #cc0033 ; }
+
 /*
 
   LANDING [ START ]
@@ -233,7 +234,11 @@ keyframes blinking {
   top             : 25px           ;
 }
 
-.nav .logo a:hover { color : blue ; }
+.nav .logo a:hover {
+  color: black;
+  background-color: #FFF;
+  border-color: black;
+}
 
 /* MENU ITEMS */
 
@@ -332,6 +337,8 @@ keyframes blinking {
 #about .flex-about{
   flex: 3;
   padding: 0 40px 0 40px;
+  animation-duration: 1.3s;
+  opacity: 0;
 }
 
 #about .flex-about p {
@@ -345,6 +352,8 @@ keyframes blinking {
 
 #about .flex-technical {
   flex: 3;
+  animation-duration: 1,3s;
+  opacity: 0;
 }
 
 #about .flex-technical h4 {
@@ -391,7 +400,7 @@ keyframes blinking {
 
 -------------------------*/
 
-#project-wrapper {
+#projects {
   flex-direction: row      ;
   flex-wrap     : nowrap   ;
   position      : relative ;
@@ -400,12 +409,12 @@ keyframes blinking {
   width         : 100%     ;
 }
 
-#project-wrapper .project-inner {
+#projects .project-inner {
   overflow : hidden ;
   width    : 100%   ;
 }
 
-#project-wrapper .project-img {
+#projects .project-img {
   transition          : transform .8s ease ;
   transform           : scale(1.4)         ;
   background-position : center             ;
@@ -414,12 +423,12 @@ keyframes blinking {
   width               : 100%               ;
 }
 
-#project-wrapper .project-img:hover {
+#projects .project-img:hover {
   transform : scale(1.0) ;
   cursor    : pointer    ;
 }
 
-#project-wrapper .project-img:hover::before {
+#projects .project-img:hover::before {
   background-color : rgba(128, 0, 128, 0.5) ;
   position         : absolute               ;
   content          : ''                     ;
@@ -431,7 +440,7 @@ keyframes blinking {
 
 }
 
-#project-wrapper .project-img a {
+#projects .project-img a {
   text-decoration : none                      ;
   text-transform  : uppercase                 ;
   font-family     : 'Do Hyeon', sans-serif    ;
@@ -445,7 +454,7 @@ keyframes blinking {
   top : 0 ; left : 0 ; bottom : 0 ; right : 0 ;
 }
 
-#project-wrapper .project-img:hover a { display : block ;}
+#projects .project-img:hover a { display : block ;}
 
 #project1 { background-image: url("https://source.unsplash.com/DcKtooTyuuQ/"); }
 #project2 { background-image: url("https://source.unsplash.com/HRZUzoX1e6w/"); }
@@ -453,7 +462,7 @@ keyframes blinking {
 
 /* small screen */
 @media screen and (max-width: 600px) {
-  #project-wrapper {
+  #projects {
     flex-direction: row      ;
     flex-wrap     : wrap     ;
     position      : relative ;
@@ -493,13 +502,13 @@ keyframes blinking {
   color: white;
 }
 
-#builds {
+#resume {
   height: 150px;
   background-color: #6d79b6;
   overflow: hidden;
 }
 
-#builds .btnToggle {
+#resume .btnToggle {
   display: block;
   margin: 50px auto;
   width: 44%;
@@ -513,7 +522,7 @@ keyframes blinking {
   overflow: hidden;
 }
 
-#builds .btnToggle:hover{
+#resume .btnToggle:hover{
   cursor: pointer;
   background-color: #61698f;
 }
