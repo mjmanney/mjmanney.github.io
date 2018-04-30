@@ -25,8 +25,8 @@ var App = {
 		$('#checkbox').change(function() {
 			if(!$('#checkbox').is(':checked')) {
 				$('#modal-menu').css('display', 'block')
-				$('#modal-menu').removeClass('animated slideOutUp')
-				$('#modal-menu').addClass('modal-menu animated slideInDown')
+												.removeClass('animated slideOutUp')
+												.addClass('modal-menu animated slideInDown')
 				$('body').css('overflow', 'hidden')
 			} else { window.alert('Error toggling menu.') }
 		})
@@ -38,7 +38,7 @@ var App = {
 			self.on('click', function(e) {
 				e.preventDefault();
 				$('#modal-menu').removeClass('animated slideInDown')
-				$('#modal-menu').addClass('animated slideOutUp')
+												.addClass('animated slideOutUp')
 				$('#checkbox').prop('checked', true)
 				$('body').css('overflow', 'scroll')
 				$('html, body').animate({
