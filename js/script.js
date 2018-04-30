@@ -41,6 +41,9 @@ var App = {
 												.addClass('animated slideOutUp')
 				$('#checkbox').prop('checked', true)
 				$('body').css('overflow', 'scroll')
+
+				if(target[0] === undefined) return
+
 				$('html, body').animate({
 					scrollTop: target.offset().top
 				}, 800, function(){
