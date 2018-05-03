@@ -40,7 +40,7 @@ var App = {
 				$('#modal-menu').removeClass('animated slideInDown')
 												.addClass('animated slideOutUp')
 				$('#checkbox').prop('checked', true)
-				$('body').css('overflow', 'scroll')
+				$('body').css('overflow-y', 'scroll')
 
 				if(target[0] === undefined) return
 
@@ -48,6 +48,7 @@ var App = {
 					scrollTop: target.offset().top
 				}, 800, function(){
 					window.location.hash = target
+					$('body').css('overflow-x', 'hidden')
 				})
 			})
 		})
