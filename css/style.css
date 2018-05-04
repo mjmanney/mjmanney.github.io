@@ -3,15 +3,19 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500i');
 
-*    { margin    : 0     ; padding    : 0      ; box-sizing : border-box ; }
+* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
 
-body { min-width : 300px ; position   : relative   ;}
-html, body { width: 100%; height: 100%; max-width: 100%;}
-.row {margin-left: 0 !important; margin-right: 0 !important;}
-.scarlet { color : #cc0033 ; }
-.js-yellow { color: #f7df1e ;}
+html,
+body { width: 100%; height: 100%; max-width: 100%; }
 
+body { min-width : 300px ; position : relative ; }
+.row { margin-left : 0 !important ; margin-right : 0 !important ; }
 
+.scarlet   { color : #cc0033 ; }
+.js-yellow { color : #f7df1e ; }
+
+::selection      { background : #b19cd9 ; }
+::-moz-selection { background : #b19cd9 ; }
 
 
 /*-------------------------
@@ -473,116 +477,110 @@ keyframes blinking {
 
 -------------------------*/
 #projects {
-  position      : relative ;
-  height    :   550px    ;
-  width         : 100%     ;
-  color: white;
-  margin: 0;
-  padding: 0;
-  font-family: "IBM Plex Sans";
-  background-color: #000;
-
-}
-
-#projects h1 {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
+  background-color : #000            ;
+  font-family      : "IBM Plex Sans" ;
+  position         : relative        ;
+  padding          : 0               ;
+  margin           : 0               ;
+  height           : 550px           ;
+  width            : 100%            ;
+  color            : white           ;
 }
 
 #projects img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: .5;
+  object-fit : cover ;
+  width      : 100%  ;
+  height     : 100%  ;
+  opacity    : .5    ;
 }
 
-
-
-#projects ul {
-  text-align: center;
-}
+#projects ul { text-align : center ; }
 
 #projects ul #tag {
-  display: inline-block;
-  border: 2px solid #323233;
-  padding: 4px;
-  font-size: 12px;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #000;
-    font-family : 'Roboto Condensed', sans-serif ;
+  background-color : #000                           ;
+  border-radius    : 5px                            ;
+  font-family      : 'Roboto Condensed', sans-serif ;
+  font-size        : 12px                           ;
+  display          : inline-block                   ;
+  padding          : 4px                            ;
+  border           : 2px solid #323233              ;
+  margin           : 5px                            ;
 }
 
 #wrapper {
-  width: 400px;
-  height: 100%;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  padding: 175px 0 0 0;
-  left: calc(50% - 200px);
+  position : absolute          ;
+  padding  : 175px 0 0 0       ;
+  height   : 100%              ;
+  margin   : auto              ;
+  width    : 400px             ;
+  left     : calc(50% - 200px) ;
+  top      : 0                 ;
 }
 
-#wrapper h1,
 #wrapper p {
-  text-align: center;
-  font-size: 18px;
+  text-align : center ;
+  font-size  : 18px   ;
 }
 
 #wrapper h1 {
-  font-size: 4em;
+  text-align  : center          ;
+  font-family : "IBM Plex Sans" ;
+  font-style  : italic          ;
+  font-size   : 4em             ;
 }
 
 #indicator {
-  display: inline-block;
-  width: 10%;
-  left: calc(50% - 20%);
-  bottom: 40px;
-  position: relative;
+  position : relative        ;
+  display  : inline-block    ;
+  bottom   : 40px            ;
+  width    : 10%             ;
+  left     : calc(50% - 20%) ;
 }
 
 .current { background-color: #cc0033 ; }
+
 .i {
-  width: 12px;
-  height: 12px;
-  border: 1px solid white;
-  display: inline-block;
-  border-radius: 100%;
-  position: relative;
-  left: calc(50% - 6px);
-  top: 0px;
+  border-radius : 100%            ;
+  position      : relative        ;
+  display       : inline-block    ;
+  border        : 1px solid white ;
+  height        : 12px            ;
+  width         : 12px            ;
+  left          : calc(50% - 6px) ;
+  top           : 0px             ;
 }
 
-#next, #prev {
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 2px solid white;
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-  color: white;
-  font-size: 2em;
-  position: absolute;
-  right:10px;
-  bottom: 150px;
+#next,
+#prev {
+  background-color : rgba(0, 0, 0, 0.8) ;
+  border-radius    : 100%               ;
+  font-size        : 2em                ;
+  position         : absolute           ;
+  bottom           : 150px              ;
+  border           : 2px solid white    ;
+  height           : 64px               ;
+  width            : 64px               ;
+  color            : white              ;
+  right            : 10px               ;
 }
 
-#prev { left: 10px;  }
+#prev { left : 10px ; }
 
-#projects button:hover { cursor: pointer }
+#projects button:hover { cursor: pointer ; }
 
 #project-link {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border: 2px solid white;
-  width: 170px ;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  left: calc(50% - 85px);
-  padding:  8px 16px;
-  background-color: rgba(0, 0, 0, 0.8);
-  text-transform: uppercase;
+  background-color : rgba(0, 0, 0, 0.8) ;
+  text-decoration  : none               ;
+  text-transform   : uppercase          ;
+  font-weight      : bold               ;
+  text-align       : center             ;
+  position         : relative           ;
+  padding          :  8px 16px          ;
+  display          : inline-block       ;
+  border           : 2px solid white    ;
+  color            : white              ;
+  width            : 170px              ;
+  left             : calc(50% - 85px)   ;
 }
 
 /*-------------------------
