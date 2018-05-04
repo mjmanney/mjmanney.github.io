@@ -3,6 +3,7 @@ var App = {
 		window.scroll(0, document.documentElement.scrollHeight)
 		App.observe()
 		App.navbar()
+		App.showcase()
 	},
 
 	observe: function() {
@@ -43,7 +44,7 @@ var App = {
 				$('body').css('overflow-y', 'scroll')
 
 				if(target[0] === undefined) return
-
+				console.log(target)
 				$('html, body').animate({
 					scrollTop: target.offset().top
 				}, 800, function(){
@@ -52,7 +53,41 @@ var App = {
 				})
 			})
 		})
+	},
+
+	showcase: function() {
+		var vm = new Vue({
+			el: '#projects',
+			data: {
+				p: [
+					{ t: 'Weather Now', d: 'An application using Open Weather API for accurate and up-to-date weather forecasts.'                                                                   , l: '#', s:'Coming Soon', tags: ['JavaScript', 'JSON', 'API', 'AJAX']             , src:"https://images.pexels.com/photos/906023/pexels-photo-906023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
+					{ t: 'Instascrape', d: 'A tool for developers to access public media endpoints on Instagram without using the official API or authentication.'                                  , l: '#', s:'Version 1.0', tags: ['CSS3 Flexbox', 'Promises', 'REST', 'AJAX']           , src:"https://images.pexels.com/photos/122383/pexels-photo-122383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
+					{ t: 'Arcade'     , d: 'A collection of classic arcade games built using the languages of the web - with a twist.'                                                              , l: '#', s:'Coming Soon', tags: ['Event Driven JS', 'Collision Detection', 'HTML5 Canvas', ]                       , src:"https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
+					{ t: 'Portfolio'  , d: 'The site you are on now! I am constantly updating and adding new features.  Check out the first iteration of this site see the difference!'             , l: '#', s:'Time Travel', tags: ['jQuery', 'Bootstrap', 'Vue.js' , 'Animate.css', 'Responsive Design']             , src:"https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" }
+				],
+				c: 0
+			},
+			methods: {
+				next: function() {
+					var current = document.getElementsByClassName('i')
+					var len     = this.p.length
+					current[this.c].className = 'i'
+					this.c += 1
+					if(this.c >= len) this.c = 0
+					current[this.c].className += ' current'
+				},
+				prev: function() {
+					var current = document.getElementsByClassName('i')
+					var len     = this.p.length
+					current[this.c].className = 'i'
+					this.c -= 1
+					if(this.c < 0) this.c = len - 1
+					current[this.c].className += ' current'
+				}
+			}
+		})
 	}
 }
+
 
 $(document).ready(App.init)

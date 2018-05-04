@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500i');
 
 *    { margin    : 0     ; padding    : 0      ; box-sizing : border-box ; }
 
@@ -24,9 +25,9 @@ html, body { width: 100%; height: 100%; max-width: 100%;}
   background-image    : url("https://images.pexels.com/photos/879356/pexels-photo-879356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") ;
   background-size     : cover                                  ;
   margin-bottom       : 0 !important                           ;
-  min-height          : 550px                                  ;
-  padding             : 0 !important                           ;
+  min-height          : 550px                                  ;                       ;
   height              : 100vh                                  ;
+
 }
 
 .jumbotron .header {
@@ -469,132 +470,118 @@ keyframes blinking {
 
 -------------------------*/
 #projects {
-  flex-direction: row      ;
-  flex-wrap     : nowrap   ;
   position      : relative ;
-  display       : flex     ;
-  min-height    : 550px    ;
+  height    :   550px    ;
   width         : 100%     ;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans";
+  background-color: #000;
+
 }
 
-#projects .project-header {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  height: 150px;
+#projects h1 {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+}
+
+#projects img {
   width: 100%;
-  background-color: #6d79b6;
-  color: #FFF;
-  font-family: 'Roboto Condensed', sans-serif;
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
+  opacity: .5;
 }
 
-#projects .project-header h1,
-#projects .project-header p {
-  position: relative;
-  width: 75%;
+
+
+#projects ul {
+  text-align: center;
+}
+
+#projects ul #tag {
+  display: inline-block;
+  border: 2px solid #323233;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #000;
+}
+
+#wrapper {
+  width: 400px;
+  height: 100%;
+  position: absolute;
   margin: auto;
+  top: 0;
+  padding: 200px 0 0 0;
+  left: calc(50% - 200px);
 }
 
-#projects .project-inner {
-  overflow : hidden ;
-  width    : 100%   ;
-  height   : 400px  ;
+#wrapper h1,
+#wrapper p {
+  text-align: center;
+  font-size: 18px;
 }
 
-#projects .project-img {
-  transition          : transform .8s ease ;
-  transform           : scale(1.4)         ;
-  background-position : center             ;
-  background-size     : cover              ;
-  height              : 100%               ;
-  width               : 100%               ;
+#wrapper h1 {
+  font-size: 4em;
 }
 
-#projects .project-img:hover {
-  transform : scale(1.0) ;
-  cursor    : pointer    ;
+#indicator {
+  display: inline-block;
+  width: 10%;
+  left: calc(50% - 20%);
+  bottom: 40px;
+  position: relative;
 }
 
-#projects .project-img:hover::before {
-  background-color : rgba(128, 0, 128, 0.5) ;
-  position         : absolute               ;
-  content          : ''                     ;
-  height           : 100%                   ;
-  width            : 100%                   ;
-  left             : 0                      ;
-  top              : 0                      ;
+.current { background-color: #cc0033 ; }
+.i {
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 100%;
+  position: relative;
+  left: calc(50% - 6px);
+  top: 0px;
 }
 
-#projects .project-img a {
-  text-decoration : none                      ;
-  text-transform  : uppercase                 ;
-  font-family     : 'Do Hyeon', sans-serif    ;
-  text-align      : center                    ;
-  font-size       : 32px                      ;
-  position        : absolute                  ;
-  display         : none                      ;
-  height          : 30px                      ;
-  margin          : auto                      ;
-  color           : white                     ;
-  top : 0 ; left : 0 ; bottom : 0 ; right : 0 ;
+#next, #prev {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid white;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  right:10px;
+  bottom: 150px;
 }
 
-#projects .project-img:hover a { display : block ;}
+#prev { left: 10px;  }
 
-#project1 { background-image: url("https://source.unsplash.com/DcKtooTyuuQ/"); }
-#project2 { background-image: url("https://source.unsplash.com/HRZUzoX1e6w/"); }
-#project3 { background-image: url("https://source.unsplash.com/BpqDaDxG48w/"); }
+#projects button:hover { cursor: pointer }
 
-/* small screen */
-@media screen and (max-width: 600px) {
-  #projects {
-    position       : relative ;
-    display        : block    ;
-  }
-
-  #projects .project-img {
-      transform : scale(1.0) ;
-
-  }
-
-  #project .project-img a {
-    position        : absolute                  ;
-    display         : block                     ;
-    height          : 100px                     ;
-    margin          : auto                      ;
-    color           : white                     ;
-    font-size       : 32px                      ;
-    top : 0 ; left : 0 ; bottom : 0 ; right : 0 ;
-  }
-
-  #projects .project-img::before {
-    background-color : rgba(128, 0, 128, 0.5) ;
-    position         : absolute               ;
-    content          : ''                     ;
-    height           : 100%                   ;
-    width            : 100%                   ;
-    left             : 0                      ;
-    top              : 0                      ;
-  }
-
-  #projects .project-header {
-    height: 340px;
-  }
-
-  #projects .project-inner {
-    position: absolute;
-    height: 300px;
-  }
-
-    background-color: red;
-  }
-
-  #projects .project-img:hover a {
-    height: 100px;
-  }
+#project-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid white;
+  width: 170px ;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left: calc(50% - 85px);
+  top: 20px;
+  padding:  8px 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
 }
+
 /*-------------------------
 
   PROJECTS [ END ]
