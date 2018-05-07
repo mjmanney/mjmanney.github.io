@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Michael Manney</title>
+  <title>Michael Manney | Front End Developer</title>
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- DEV ICONS konpa.github.io/devicon -->
@@ -21,63 +21,68 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jaldi">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="src/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="src/libs/animate/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jaldi">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="src/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="src/libs/animate/animate.css">
   <!-- SCRIPTS -->
-    <!-- jQuery library -->
-    <script src='src/libs/jquery/jquery-3.3.1.min.js' type="text/javascript"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src='src/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js' type="text/javascript"></script>
-    <!-- Vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <!-- JS -->
-    <script src="js/script.js"type="text/javascript"></script>
+  <!-- jQuery library -->
+  <script src='src/libs/jquery/jquery-3.3.1.min.js' type="text/javascript"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src='src/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js' type="text/javascript"></script>
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- Google Maps -->
+  <script src="js/embedded-map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCig9ko9Z4VEtOy7e9hqFvWCRiAaKTzfVY&callback=onGoogleScript"></script>
+  <!-- JS -->
+  <script src="js/script.js" type="text/javascript"></script>
 </head>
 
 <body>
 <!--
+
   MOBILE HIDDEN MENU [ START ]
+
 -->
-<div id="modal-menu" class="">
+<div id="modal-menu">
+  <div id="close">
+    <a href="" class="smooth-scroll">
+      <span class="glyphicon glyphicon-remove-sign"></span>
+    </a>
+  </div>
   <ul class='modal-ul'>
-    <li><a href="#about" class="smooth-scroll">About</a></li>
+    <li><a href="#landing" class="smooth-scroll">Home</a></li>
+    <li><a href="#about"   class="smooth-scroll">About</a></li>
     <li><a href="#pAnchor" class="smooth-scroll">Projects</a></li>
-    <li><a href="#resume" class="smooth-scroll">Resume</a></li>
+    <li><a href="#resume"  class="smooth-scroll">Resume</a></li>
     <li><a href="#contact" class="smooth-scroll">Contact</a></li>
-  </ul>
-  <ul class='modal-options'>
-    <li id="home"><a  href="#landing" class="smooth-scroll"> <span class="glyphicon glyphicon-home"></span> </a></li>
-    <li id="close"><a href="" class="smooth-scroll"><span class="glyphicon glyphicon-remove-sign"></span></a></li>
   </ul>
 </div>
 <!--
+
   MOBILE HIDDEN MENU [ END ]
+
 -->
 <!--
 
   CONTACT [ START ]
 
  -->
-<div class="row" id="contact">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-      <h1 class="sectionTitle">Contact</h1>
-      <p class="sectionContent">
-      For more information send an email to <a href="#">michaelmanney@gmail.com</a>
-      </p>
-
-      <ul id="accounts">
-        <li><a href="https://github.com/mjmanney" target="_blank"><img id="github"   src="src/img/github-logo.png" alt="Github"></a></li>
-        <li><a href="https://codepen.io/mmanney/" target="_blank"><img id="codepen"  src="src/img/codepen-logo.png"alt="Codepen"></a></li>
-      </ul>
+<div id="contact">
+  <div id="contact-wrap">
+      <div id="map"></div>
+      <p>Get in touch</p>
+      <p>email : <a href="mailto:michaelmanney@gmail.com">michaelmanney@gmail.com</a></p>
+      <p>Check me out elsewhere</p>
+      <div id="btn-grp">
+        <a href="http://github.com" class="icon" id="github">Github</a>
+        <a href="http://codepen.io" class="icon" id="codepen">Codepen</a>
+      </div>
   </div>
-
-  <div class="col-md-2"></div>
 </div>
 <!--
 
@@ -86,51 +91,26 @@
  -->
  <!--
 
-   HIDDEN SECTION
-   [ START ]
+  RESUME [ START ]
 
  -->
 
- <div id="collapse" class="container-fluid collapse">
-   <div class="row">
-     <div class="col-md-2"></div>
-     <div class="col-md-8">
-         <h1 class="sectionTitle">Builds</h1>
-         <p class="sectionContent">
-         In addition to software development, I enjoy working with computer hardware.  This
-         section documents some of my own PC builds and a project using the Raspberry Pi 3 Model B.
-         <span style="color:white;">Coming Soon!</span>
-         </p>
-     </div>
-     <div class="col-md-2"></div>
-   </div>
- </div>
-
  <!--
 
-   HIDDEN SECTION
-   [ END ]
-
- -->
- <!--
-
-   BUTTON [ START ]
-
- -->
-
- <div id="resume" class="container-fluid"></div>
-
- <!--
-
-   BUTTON [ END ]
+  RESUME [ END ]
 
  -->
  <!--
 
    PROJECTS [ START ]
+   [ VUE.JS ]
 
  -->
- <div id="pAnchor"></div> <!-- For some reason, vue object has offsetTop = 0 -->
+ <div id="pAnchor"></div> 
+ <!-- 
+    For some reason, vue object has offsetTop = 0,
+    so use pAnchor as href target for nav
+  -->
  <div id="projects">
    <img v-bind:src="p[c].src" />
    <div id="wrapper">
@@ -169,7 +149,7 @@
      <h3>WHAT IS YOUR PROFESSION</h3>
      <p>
        I am a freelance Front End Developer.  That means I create appealing and professional
-       websites.  Additionally I work a 40+ hr full-time job in a technical account role,
+       websites.  Additionally I work a full-time job in a technical account role,
        where I have used my <span class='js-yellow'>JavaScript</span> expertise on multiple projects.
      </p>
 
