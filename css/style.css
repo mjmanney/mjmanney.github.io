@@ -514,7 +514,7 @@ keyframes blinking {
   margin   : auto              ;
   width    : 400px             ;
   left     : calc(50% - 200px) ;
-  top      : 0                 ;
+  top      : -40px             ;
 }
 
 #wrapper p {
@@ -599,6 +599,19 @@ keyframes blinking {
   width: 100%;
   position: relative;
   height: 550px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+#heading{
+  position: relative;
+  top: 80px;
+}
+
+#contact-heading {
+  text-align: center;
+  font-size: 28px;
+  position: relative;
 }
 
 #contact-wrap {
@@ -623,7 +636,9 @@ keyframes blinking {
 
 #btn-grp { 
   position: relative; 
-
+  clear: left;
+  text-align: center;
+  top: 50px;
 }
 
 #btn-grp .icon {
@@ -635,6 +650,14 @@ keyframes blinking {
   text-align: right;
   line-height: 50px;
   padding-right: 14px;
+  color: black;
+  font-size: 14px;
+}
+
+#btn-grp .icon:hover,
+#btn-grp .icon:link {
+  text-decoration: none;
+  color: black;
 }
 
 #btn-grp #github:before {
