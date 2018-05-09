@@ -1,194 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<meta charset="utf-8">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalabale=no">
-  <title>Michael Manney</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Michael J. Manney | Front End Developer</title>
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- DEV ICONS konpa.github.io/devicon -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jaldi">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="src/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="src/libs/animate/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jaldi">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="src/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="src/libs/animate/animate.css">
   <!-- SCRIPTS -->
-    <!-- jQuery library -->
-    <script src='src/libs/jquery/jquery-3.3.1.min.js' type="text/javascript"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src='src/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js' type="text/javascript"></script>
-    <!-- JS -->
-    <script src="js/script.js"type="text/javascript"></script>
+  <!-- jQuery library -->
+  <script src='src/libs/jquery/jquery-3.3.1.min.js' type="text/javascript"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src='src/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js' type="text/javascript"></script>
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- Google Maps -->
+  <script src="js/embedded-map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCig9ko9Z4VEtOy7e9hqFvWCRiAaKTzfVY&callback=onGoogleScript"></script>
+  <!-- JS -->
+  <script src="js/script.js" type="text/javascript"></script>
 </head>
 
 <body>
+<!--
 
-<!--START JUMBOTRON SECTION -->
+  MOBILE HIDDEN MENU [ START ]
 
-<div class="jumbotron jumbotron-fluid">
-
-  <!-- START NAV -
-
-  <nav class="navbar navbar-default" role="navigation">
-
-    <div class="container-fluid">
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-
-      <div class="collapse navbar-collapse">
-
-        <ul id="nav" class="nav navbar-nav navbar-right">
-          <li id="nav-about" class="list"><a href="#about">About</a></li>
-          <li id="nav-projects" class="list"><a href="#projects">Projects</a></li>
-          <li id="nav-builds" class="list"><a href="#builds">Builds</a></li>
-          <li id="nav-contact" class="list"><a href="#contact">Contact</a></li>
-        </ul>
-
-      </div>
-
-    </div>
-
-  </nav>
-
-
-   END NAV -->
-
-  <div class=" animated fadeIn container header">
-    <div class="textFadedBackground">
-      <h1 class="display-3">Michael J. Manney</h1>
-      <p class="lead">Web Developer</p>
-      <ul id="nav">
-        <li ><a href="#about">About</a></li>
-        <li ><a href="#projects">Projects</a></li>
-        <li ><a href="#builds">Builds</a></li>
-        <li ><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+-->
+<div id="modal-menu">
+  <div class='logo'>MJM</div>
+  <div id="close">
+    <a href="" class="smooth-scroll">
+      <span class="glyphicon glyphicon-remove-sign"></span>
+    </a>
   </div>
-
-  <div id="profile-picture"></div>
-  <span id= "arrow-down"class="glyphicon glyphicon-arrow-down animated bounce"></span>
+  <ul class='modal-ul'>
+    <li><a href="#landing" class="smooth-scroll">Home</a></li>
+    <li><a href="#about"   class="smooth-scroll">About</a></li>
+    <li><a href="#pAnchor" class="smooth-scroll">Projects</a></li>
+    <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+  </ul>
 </div>
-<!-- END JUMBOTRON SECTION -->
+<!--
 
-<!-- START ABOUT SECTION -->
-<div class="row" id="about">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-      <h1 class="sectionTitle">About</h1>
-      <p class="sectionContent">Hello friend and welcome to my site!</p>
-      <p class="sectionContent">
-      My goal as a developer is to create striking front-end applications that are written elegantly and efficiently.
-      Currently this site serves as a showcase for all of current and completed projects.  My focus
-      lies in client and server-side JavaScript.  When starting a new project, I try to develop around one or two
-      different web technologies as a way to gain experience.
-      </p>
-  </div>
-  <div class="col-md-2"></div>
-</div>
-<!-- END ABOUT SECTION -->
+  MOBILE HIDDEN MENU [ END ]
 
-<!-- START PROJECTS SECTION -->
-<div class="projectBackgroundColor">
-	<div class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-			<h1 class="sectionTitle">Projects</h1>
-			<p class="sectionContent">A collection of my current projects.  </p>
-		</div>
-		<div class="col-md-2"></div>
-		</div>
-<div class="container" id="projects">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <div id="app1img" class="card-image"></div>
-        <div class="card-content">
-          <h2 class="card-title">Weather</h2>
-          <p class="card-text">A modern weather app using Open Weather API.</p>
-          <a href="#" class="btn btn-default viewBtn">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div id="app3img" class="card-image"></div>
-        <div class="card-content">
-          <h2 class="card-title">Instascrape</h2>
-          <p class="card-text">Get data without using Instagram's API.</p>
-          <a href="projects/instascrape/index.html" class="btn btn-default viewBtn">VIEW</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div id="app2img" class="card-image"></div>
-        <div class="card-content">
-          <h2 class="card-title">Breakout</h2>
-          <p class="card-text">An arcade classic using HTML5 canvas.</p>
-          <a href="#" class="btn btn-default viewBtn">VIEW</a>
-        </div>
-      </div>
-    </div>
-  </div>
+-->
+<!--
+
+  FOOTER [ START ]
+
+-->
+<div id="footer">
+  <div id="footer-wrap">
+    <p>&copy; 2018 Michael J. Manney</p>
+    <p>The icons and images on this site were made available for free from:</p>
+    <ul>
+      <li><a href="http://www.pexels.com" target="_blank">pexels</a></li>
+      <li><a href="http://konpa.github.io/devicon/" target="_blank">devicon project</a></li>
+      <li><a href="http://glyphicons.com/" target="_blank">glyphicons</a></li>
+    </ul>
 </div>
 </div>
+<!--
 
-<!-- END PROJECTS SECTION -->
+  FOOTER[ END ]
 
-<!-- START RES SECTION -->
+-->
+<!--
 
-<div id="builds" class="container-fluid">
+  CONTACT [ START ]
 
-  <button href="#collapse" data-toggle="collapse" id="modalBtn" class="btn btn-default">Show Recent Build</button>
-
-</div>
-
-<!-- END RES SECTION -->
-
-<!-- START BUILDS SECTION -->
-
-<div id="collapse" class="container-fluid collapse">
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <h1 class="sectionTitle">Builds</h1>
-        <p class="sectionContent">
-        In addition to software development, I enjoy working with computer hardware.  This
-        section documents some of my own PC builds and a project using the Raspberry Pi 3 Model B.
-        <span style="color:white;">Coming Soon!</span>
+ -->
+<div id="contact">
+  <div id="contact-wrap">
+      <div id="map"></div>
+      <div id="heading">
+        <p id="contact-heading">Say Hello</p>
+        <p>
+          You can find me somewhere around the red marker.    
+          Or feel free to just send me a message.  While 
+          you're waiting to hear back from me pass the time
+          by reading my r&eacute;sum&eacute;.
         </p>
-    </div>
-    <div class="col-md-2"></div>
+        <p>
+          <span class="glyphicon glyphicon-envelope"></span>
+          <a href="mailto:michaelmanney@gmail.com">michaelmanney@gmail.com</a>
+        </p>
+        <p>
+          <span class="glyphicon glyphicon-phone"></span>
+          <a href="tel:+18622585771">862 258 5771</a>
+        </p>
+        <p>
+          <span class="glyphicon glyphicon-file"></span>
+          <a href="src/downloads/michaeljmanney_resume.pdf" download>R&eacute;sum&eacute;</a>
+        </p>
+      </div>
+      <div id="btn-grp">
+        <p>Check me out elsewhere (will update with social media soon!)</p>
+        <a href="https://github.com/mjmanney" class="icon" id="github"  target="_blank">Github</a>
+        <a href="https://codepen.io/mmanney/" class="icon" id="codepen" target="_blank">Codepen</a>
+      </div>
   </div>
 </div>
+<!--
 
-<!-- END BUILDS SECTION -->
+  CONTACT [ END ]
 
-<!-- START CONTACT SECTION -->
-<div class="row" id="contact">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-      <h1 class="sectionTitle">Contact</h1>
-      <p class="sectionContent">
-      For more information send an email to <a href="#">michaelmanney@gmail.com</a>
-      </p>
+ -->
+ <!--
 
-      <ul id="accounts">
-        <li><a href="https://github.com/mjmanney" target="_blank"><img id="github"class="logo" src="src/img/github-logo.png" alt="Github"></a></li>
-        <li><a href="https://codepen.io/mmanney/" target="_blank"><img id="codepen" class="logo" src="src/img/codepen-logo.png"alt="Codepen"></a></li>
-      </ul>
+  NULL [ START ]
+
+ -->
+
+ <!--
+
+  NULL [ END ]
+
+ -->
+ <!--
+
+   PROJECTS [ START ]
+   [ VUE.JS ]
+
+ -->
+ <div id="pAnchor"></div> 
+ <!-- 
+    For some reason, vue object has offsetTop = 0,
+    so use pAnchor as href target for nav
+  -->
+ <div id="projects">
+   <video v-if="c === 0" v-bind:src="p[c].src" type="video/mp4" autoplay loop muted></video> 
+   <img   v-else v-bind:src="p[c].src" />
+   <div id="wrapper">
+     <h1> {{ p[c].t }} </h1>
+     <p>  {{ p[c].d }} </p>
+     <ul>
+       <li id="tag" v-for="tag in p[c].tags"> {{ tag }}</li>
+     </ul>
+     <a  id="project-link" v-bind:href="p[c].l" target="_blank"> {{ p[c].s }}</a>
+   </div>
+   <div id="indicator" v-for="(projects, index) in p">
+     <span class="i" v-bind:class="{'current': index === 0}"></span>
+   </div>
+   <button id="next" v-on:click="next" type="button" name="button"> > </button>
+   <button id="prev" v-on:click="prev" type="button" name="button"> < </button>
+ </div>
+ <!--
+
+   PROJECTS [ END ]
+
+ -->
+ <!--
+
+   ABOUT [ START ]
+
+ -->
+ <div id="about">
+   <div class="flex-about">
+     <h3>WHO ARE YOU</h3>
+     <p>
+       Hi, my name is Michael.  I grew up on the cul-de-sac's of wooded suburban neighborhoods
+       in North Jersey.  I graduated from a <span class='scarlet'>noisy college down on the banks
+       of the Old Raritan</span> River.
+    </p>
+
+     <h3>WHAT IS YOUR PROFESSION</h3>
+     <p>
+       I am a freelance Front End Developer.  That means I create appealing, unique, and professional
+       websites.  Additionally I work a full-time job in a technical account role,
+       where I have used my <span class='js-yellow'>JavaScript</span> expertise on multiple projects.
+     </p>
+
+     <h3>WHERE ARE YOU HEADED</h3>
+     <p>
+       My dream is to become a Full Stack Developer and use my knowledge to create applications
+       that benefit people and communities on any scale.
+     </p>
+     <h3>WHAT DO YOU DO FOR FUN</h3>
+     <p>
+       I enjoy trying out a new recipe, working on my Chess game, or watching The Wire.  Sometimes I go outside too.
+     </p>
+   </div>
+   <div class="flex-filler"></div>
+   <div class="flex-technical">
+     <h2>Technical Skills</h2>
+     <div class="tech-container">
+       <div class="proficient">
+         <h4>Comfortable</h4>
+          <i class="devicon-html5-plain colored"><span class="tooltip-text">HTML5</span></i>
+          <i class="devicon-css3-plain colored"><span class="tooltip-text">CSS3</span></i>
+          <i class="devicon-javascript-plain colored"><span class="tooltip-text">JavaScript</span></i>
+          <i class="devicon-jquery-plain colored"><span class="tooltip-text">jQuery</span></i>
+          <i class="devicon-bootstrap-plain colored"><span class="tooltip-text">Bootstrap</span></i>
+       </div>
+       <div class="experienced">
+         <h4>Experience (Limited)</h4>
+          <i class="devicon-nodejs-plain colored"><span class="tooltip-text">Node.js</span></i>
+          <i class="devicon-express-original colored"><span class="tooltip-text">Express.js</span></i>
+          <i class="devicon-vuejs-plain colored"><span class="tooltip-text">Vue.js</span></i>
+          <i class="devicon-java-plain colored"><span class="tooltip-text">Java</span></i>
+          <i class="devicon-python-plain colored"><span class="tooltip-text">Python</span></i>
+          <i class="devicon-mysql-plain colored"><span class="tooltip-text">mySQL</span></i>
+       </div>
+       <div class="tools">
+         <h4>Tools</h4>
+         <i class="devicon-atom-original colored"><span class="tooltip-text">Atom</span></i>
+         <i class="devicon-git-plain colored"><span class="tooltip-text">Git</span></i>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!--
+
+   ABOUT [ END ]
+
+ -->
+ <!--
+
+   HEADER [ START ]
+
+ -->
+   <header id="nav" class="nav">
+     <div class="logo">
+       <a href="#landing" class="smooth-scroll">MJM</a>
+     </div>
+     <label id="collapse-menu">
+      <input type="checkbox" id="checkbox" checked="false" autocomplete="off">
+      <div class="glyphicon glyphicon-menu-hamburger collapse-icon"></div>
+     </label>
+     <div class="nav_list_wrapper">
+       <!-- Navbar for large devices -->
+       <ul class="nav_list">
+           <li><a href="#about" class="smooth-scroll">About</a></li>
+           <li><a href="#pAnchor" class="smooth-scroll">Projects</a></li>
+           <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+         </ul>
+     </div>
+   </header>
+ <!--
+
+     HEADER [ END ]
+
+ -->
+ <!--
+
+   USER LANDING [ START ]
+
+ -->
+ <div id="landing" class="jumbotron jumbotron-fluid">
+   <div class="header">
+     <h1>Design</h1>
+     <div class="inner">
+       <h2 class="animated fadeIn first">a strong foundation.</h2>
+       <h2 class="animated fadeIn third">Then build it <span style="color:#5c69ae; font-weight: bold;">up</span>.</h2>
+       <div class="animated fadeIn fourth">MJM</div>
+     </div>
+   </div>
+   <div class="scroll-wrapper animated fadeIn fourth ">
+      <a class="scroll-link smooth-scroll" href="#about">
+       <span class="scroll-icon"></span>
+      </a>
   </div>
+ </div>
+ <!--
 
-  <div class="col-md-2"></div>
-</div>
-<!-- END CONTACT SECTION -->
+   USER LANDING [END]
 
+ -->
 </body>
 </html>
