@@ -51,7 +51,7 @@ body {
 }
 
 .jumbotron .header {
-  margin-bottom : -18px   !important ;
+  margin-bottom : -50px !important   ;
   font-family   : 'Lato', sans-serif ;
   position      : relative           ;
   margin        : auto               ;
@@ -200,12 +200,11 @@ keyframes blinking {
   100% { opacity : 0 ; }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 726px){
   .jumbotron .header {
     width: 300px;
-  }
-  .jumbotron .header h1 {
-    font-size : 6em ;
+    font-size: 10px;
+    margin: auto;
   }
 }
 
@@ -239,7 +238,7 @@ keyframes blinking {
   list-style-type : none     ;
   position        : relative ;
   width           : 100%     ;
-  text-align: center;
+  text-align      : center   ;
 }
 
 .modal-menu .modal-ul li a {
@@ -334,10 +333,6 @@ keyframes blinking {
   top             : 25px           ;
 }
 
-.nav .logo a:hover {
- 
-}
-
 /* MENU ITEMS */
 .nav .nav_list_wrapper {
   margin-right : 40px         ;
@@ -424,7 +419,7 @@ keyframes blinking {
   padding          : 40px 0                         ;
   color            : #FFF                           ;
   width            : 100%                           ;
-  position: relative;
+  position         : relative;
 }
 
 #about .flex-about {
@@ -604,9 +599,27 @@ keyframes blinking {
   width            : 170px                ;
   left             : calc(50% - 85px)     ;
 }
+
+@media screen and (max-width: 726px) {
+  #next, #prev {
+    width: 48px;
+    height: 48px; 
+
+  }
+}
 /*-------------------------
 
   PROJECTS [ END ]
+
+-------------------------*/
+/*-------------------------
+
+  NULL [ START ]
+
+-------------------------*/
+/*-------------------------
+
+  NULL [ END ]
 
 -------------------------*/
 /*-------------------------
@@ -688,7 +701,8 @@ keyframes blinking {
 #btn-grp .icon:hover,
 #btn-grp .icon:link {
   text-decoration: none;
-  color: white;
+  color: #FFF;
+  border-color: #5c69ae;
 }
 
 #btn-grp #github:before {
@@ -716,6 +730,28 @@ keyframes blinking {
 @media screen and (max-width: 726px) {
   #contact-wrap {
     width: 100%;
+    background: linear-gradient(.15turn, #213A41, #6D8B93);
+  }
+
+  #map { 
+    display: block; 
+    float: none;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+
+  #heading {
+    top: 0;
+    padding: 0 16px;
+  }
+
+  #btn-grp {
+    top: 10px;
+  }
+
+  #btn-grp p {
+    display: none;
   }
 }
 
@@ -755,7 +791,6 @@ keyframes blinking {
   position: relative;
   float: left;
   margin-left: 25px;
-
 }
 
 

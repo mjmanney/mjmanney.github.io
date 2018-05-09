@@ -4,7 +4,7 @@ var App = {
 		App.observe()
 		App.navbar()
 		App.showcase()
-		App.buttonFeedback([$('#next'), $('#prev')])
+		App.clickBounce([$('#next'), $('#prev')])
 	},
 
 	observe: function () {
@@ -89,16 +89,16 @@ var App = {
 			}
 		})
 	},
-	buttonFeedback: function(buttonList) {
-	 buttonList.forEach(button => {
-	 	$(button).on('mousedown', function(e) {
-	 		button.addClass('btn-feedback')
-	 	})
-	 	.on('mouseup', function(e){
-	 		button.removeClass('btn-feedback')
-	 	})
 
-	 })
+	clickBounce: function(buttonList) {
+		buttonList.forEach(button => {
+			$(button).on('mousedown', function(e) {
+				button.addClass('btn-feedback')
+	 		})
+	 		.on('mouseup', function(e){
+	 			button.removeClass('btn-feedback')
+	 		})
+	 	})
 	}
 }
 
