@@ -49,6 +49,7 @@
 
 -->
 <div id="modal-menu">
+  <div class='logo'>MJM</div>
   <div id="close">
     <a href="" class="smooth-scroll">
       <span class="glyphicon glyphicon-remove-sign"></span>
@@ -160,7 +161,7 @@
      <ul>
        <li id="tag" v-for="tag in p[c].tags"> {{ tag }}</li>
      </ul>
-     <a  id="project-link" v-bind:href="p[c].l"> {{ p[c].s }}</a>
+     <a  id="project-link" v-bind:href="p[c].l" target="_blank"> {{ p[c].s }}</a>
    </div>
    <div id="indicator" v-for="(projects, index) in p">
      <span class="i" v-bind:class="{'current': index === 0}"></span>

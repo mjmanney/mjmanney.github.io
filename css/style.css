@@ -28,6 +28,7 @@ body {
 
 .scarlet         { color : #cc0033 ; }
 .js-yellow       { color : #f7df1e ; }
+.btn-feedback    { transform: scale(0.88); }f
 ::selection      { background : #b19cd9 ; }
 ::-moz-selection { background : #b19cd9 ; }
 
@@ -50,13 +51,14 @@ body {
 }
 
 .jumbotron .header {
-  font-family : 'Lato', sans-serif ;
-  position    : relative           ;
-  margin      : auto               ;
-  width       : 500px              ;
-  color       : white              ;
-  top         : 50px               ;
-  text-shadow : 2px 2px 2px #323233;
+  margin-bottom : -18px   !important ;
+  font-family   : 'Lato', sans-serif ;
+  position      : relative           ;
+  margin        : auto               ;
+  width         : 500px              ;
+  color         : white              ;
+  top           : 50px               ;
+  text-shadow   : 2px 2px 2px #323233;
 }
 
 .jumbotron .header h1 {
@@ -237,15 +239,14 @@ keyframes blinking {
   list-style-type : none     ;
   position        : relative ;
   width           : 100%     ;
+  text-align: center;
 }
 
 .modal-menu .modal-ul li a {
   text-decoration : none               ;
-  text-transform  : lowercase          ;
   transistion     : color 1s linear    ;
   font-family     : 'Lato', sans-serif ;
-  text-align      : center             ;
-  font-size       : 3em                ;
+  font-size       : 2em                ;
   display         : block              ;
   padding         : 20px               ;
   color           : #BDBDBD            ;
@@ -253,6 +254,20 @@ keyframes blinking {
 }
 
 .modal-menu .modal-ul li a:hover { color : #FFF ; }
+
+.modal-menu .logo {
+  text-decoration : none           ;
+  font-weight     : bold           ;
+  text-align      : center         ;
+  font-size       : 28px           ;
+  position        : relative       ;
+  display         : block          ;
+  margin          : 0 10px 0 10px  ;
+  border          : 1px solid #FFF ;
+  color           : white          ;
+  top             : 55px           ;
+  width           : 110px          ;
+}
 
 #close {
   text-align : center   ;
@@ -279,14 +294,14 @@ keyframes blinking {
 #close a span:hover { color : #FFF ; }
 
 .nav {
-  background-color : #000                           ;
+  background-color : #99B5B9                        ;
   font-family      : 'Roboto Condensed', sans-serif ;
   font-size        : 18px                           ;
   position         : sticky                         ;
   z-index          : 0                              ;
   bottom           : 0                              ;
   height           : 90px                           ;
-  border           : 1px solid #323233              ;
+  border           : 1px solid #E3EBEE              ;
   width            : 100%                           ;
   color            : #FFF                           ;
 }
@@ -297,7 +312,7 @@ keyframes blinking {
   border-right  : 1px               ;
   border-top    : 0                 ;
   border-bottom : 0                 ;
-  border-color  : #323233           ;
+  border-color  : #E3EBEE           ;
   border-style  : solid             ;
   margin-left   : 40px              ;
   display       : inline-block      ;
@@ -320,9 +335,7 @@ keyframes blinking {
 }
 
 .nav .logo a:hover {
-  background-color : #FFF  ;
-  border-color     : black ;
-  color            : black ;
+ 
 }
 
 /* MENU ITEMS */
@@ -342,35 +355,27 @@ keyframes blinking {
 }
 
 .nav .nav_list_wrapper .nav_list li {
-  border-left   : 1px          ;
-  border-right  : 1px          ;
-  border-top    : 0            ;
-  border-bottom : 0            ;
-  border-color  : #323233      ;
-  border-style  : solid        ;
   margin-left   : -5px         ;
   position      : relative     ;
   display       : inline-block ;
-  height        : 90px         ;
 }
 
 .nav .nav_list_wrapper .nav_list li a {
   text-decoration : none                         ;
   text-transform  : uppercase                    ;
   font-weight     : bold                         ;
-  transition      : color, background-color 0.5s ;
   text-align      : center                       ;
   position        : relative                     ;
   padding         : 35px 14px 30px 14px          ;
   display         : block                        ;
-  height          : 90px                         ;
+  height          : 88px                         ;
   color           : white                        ;
 }
 
 .nav .nav_list_wrapper .nav_list li a:hover,
 .nav .nav_list_wrapper .nav_list li a:focus {
-  background-color : #FFF ;
-  color            : #000 ;
+  text-decoration: underline;
+  color: #5c69ae ;
 }
 
 @media screen and (max-width: 726px) {
@@ -381,15 +386,13 @@ keyframes blinking {
     position   : absolute                     ;
     display    : inline-block                 ;
     height     : 100%                         ;
-    border     : 1px solid #323233            ;
     right      : 40px                         ;
     width      : 90px                         ;
   }
 
   #collapse-menu:hover {
-    background-color : #FFF    ;
-    cursor           : pointer ;
-    color            : #000    ;
+    cursor           : pointer   ;
+    color            : #5c69ae   ;
   }
 
   .collapse-icon {
@@ -498,7 +501,7 @@ keyframes blinking {
   height           : 550px           ;
   width            : 100%            ;
   color            : white           ;
-  overflow: hidden;
+  overflow         : hidden;
 }
 
 #projects img,
@@ -577,6 +580,7 @@ keyframes blinking {
   width            : 64px                 ;
   color            : white                ;
   right            : 10px                 ;
+  transition       : transform 0.1s ease-in-out ;
 
 }
 
@@ -616,7 +620,7 @@ keyframes blinking {
   height: 550px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  background-color:#5c69ae;
+  background-color:#213A41;
   color: white;
 }
 
@@ -642,14 +646,15 @@ keyframes blinking {
   margin-left: 5px;
 }
 
+#heading p a:hover { text-decoration-color: #5c69ae; }
+
 #contact-wrap {
   position: relative;
-  border-right: 1px dotted white;
-  border-left: 1px dotted white;
+  box-shadow: 0px 0px 15px #0c0c0c;
   width: 600px;
   margin: auto;
   height: 100%;
-  background-color:  #6d79b6;
+  background-color: #6D8B93;
 }
 
 #map {
