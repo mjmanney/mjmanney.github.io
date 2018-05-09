@@ -152,7 +152,7 @@
     so use pAnchor as href target for nav
   -->
  <div id="projects">
-   <video v-if="c === 0" v-bind:src="p[c].src" type="video/mp4" autoplay loop muted></video> 
+   <video v-if="c === 0" v-bind:src="p[c].src" type="video/mp4" autoplay="autoplay" loop="loop" muted="muted"></video> 
    <img   v-else v-bind:src="p[c].src" />
    <div id="wrapper">
      <h1> {{ p[c].t }} </h1>

@@ -61,11 +61,11 @@ var App = {
 			el: '#projects',
 			data: {
 				p: [
-					{ t: 'BLE Scanner', d: 'A scanning application interfacing the KDC BLE scanner with Cassia Bluetooth Router.  View the repository.'            , l: 'https://github.com/mjmanney/cassia-server', s:'Version 1.0', tags: ['Node.js', 'Express.js', 'Pug', 'Skeleton CSS', 'Authentication', 'Promises', 'AJAX'] , src:"src/video/kdc_cassia_demo.mp4" },
-					{ t: 'Weather Now', d: 'An application using Open Weather API for accurate and up-to-date weather forecasts.'                                  , l: '#'                                        , s:'Coming Soon', tags: ['JavaScript', 'JSON', 'API', 'AJAX']                                                  , src:"https://images.pexels.com/photos/906023/pexels-photo-906023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
-					{ t: 'Instascrape', d: 'A tool for developers to access public media endpoints on Instagram without using the official API or authentication.' , l: 'projects/instascrape/index.html'          , s:'Version 1.0', tags: ['CSS3 Flexbox', 'Promises', 'REST', 'AJAX']                                           , src:"https://images.pexels.com/photos/122383/pexels-photo-122383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
-					{ t: 'Arcade'     , d: 'A collection of classic arcade games built using the languages of the web - with a twist.'                             , l: '#'                                        , s:'Coming Soon', tags: ['Event Driven JS', 'Collision Detection', 'HTML5 Canvas' ]                            , src:"https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
-					{ t: 'Portfolio'  , d: 'The site you are on now! I periodically revise and update the site with new features.  View the repository.'           , l: 'https://github.com/mjmanney/domain'       , s:'Version 2.0', tags: ['AWS S3', 'jQuery', 'Bootstrap', 'Vue.js' , 'Animate.css', 'Responsive Design']       , src:"https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  }
+					{ t: 'BLE Scanner', d: 'A scanning application interfacing the KDC BLE scanner with Cassia Bluetooth Router.  View the repository.'                                           , l: 'https://github.com/mjmanney/cassia-server', s:'Version 1.0', tags: ['Node.js', 'Express.js', 'Pug', 'Skeleton CSS', 'Authentication', 'Promises', 'AJAX'] , src:"src/video/kdc_cassia_demo.mp4" },
+					{ t: 'Weather Now', d: 'An application using Open Weather API for accurate and up-to-date weather forecasts.'                                                                 , l: '#'                                        , s:'Coming Soon', tags: ['JavaScript', 'JSON', 'API', 'AJAX']                                                  , src:"https://images.pexels.com/photos/906023/pexels-photo-906023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
+					{ t: 'Instascrape', d: 'A tool for developers to access public media endpoints on Instagram without using the official API or authentication.'                                , l: 'projects/instascrape/index.html'          , s:'Version 1.0', tags: ['CSS3 Flexbox', 'Promises', 'REST', 'AJAX']                                           , src:"https://images.pexels.com/photos/122383/pexels-photo-122383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
+					{ t: 'Arcade'     , d: 'A collection of classic arcade games built using the languages of the web - with a twist.'                                                            , l: '#'                                        , s:'Coming Soon', tags: ['Event Driven JS', 'Collision Detection', 'HTML5 Canvas' ]                            , src:"https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
+					{ t: 'Portfolio'  , d: 'The site you are on now! I am constantly revising and adding new features. Managed using AWS S3, Route 53, Cloud Front, & ACM technologies'           , l: 'https://github.com/mjmanney/domain'       , s:'Version 2.0', tags: ['AWS', 'jQuery', 'Bootstrap', 'Vue.js' , 'Animate.css', 'Responsive Design']       , src:"https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  }
 				],
 				c: 0
 			},
@@ -92,10 +92,10 @@ var App = {
 
 	clickBounce: function(buttonList) {
 		buttonList.forEach(button => {
-			$(button).on('mousedown', function(e) {
+			$(button).on('mousedown touchstart', function(e) {
 				button.addClass('btn-feedback')
 	 		})
-	 		.on('mouseup', function(e){
+	 		.on('mouseup touchend', function(e){
 	 			button.removeClass('btn-feedback')
 	 		})
 	 	})
