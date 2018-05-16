@@ -102,5 +102,4 @@ var App = {
 	}
 }
 
-
 $(document).ready(App.init)
