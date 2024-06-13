@@ -171,7 +171,7 @@ body {
 .scroll-wrapper .scroll-link .scroll-icon::before {
   -webkit-animation : blinking 4s 10                  ;
   border-radius     : 50%                             ;
-  box-shadow        : 0 0 0 0 rgba(255, 255, 255, .1) ;
+  box-shadow        : 0 0 0 0 rgba(109, 121, 182, 0.1) ;
   animation         : blinking 4s infinite            ;
   position          : absolute                        ;
   content           : ''                              ;
